@@ -9,6 +9,6 @@
             "email": "MindFlare56@hotmail.fr"            
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
