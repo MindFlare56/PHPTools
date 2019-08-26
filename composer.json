@@ -1,0 +1,13 @@
+{
+  "name": "mindf/PHPTools",
+  "type": "library",
+  "description": "A php tools library",
+  "keywords": ["PHP"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dave Beauchesne",
+      "role": "Developer"
+    }
+  ]
+}
