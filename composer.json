@@ -1,13 +1,14 @@
 {
-  "name": "mindf/PHPTools",
-  "type": "library",
-  "description": "A php tools library",
-  "keywords": ["PHP"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Dave Beauchesne",
-      "role": "Developer"
-    }
-  ]
+    "name": "mindf/php-tools",
+    "description": "A php library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MindF",
+            "email": "MindFlare56@hotmail.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
 }
