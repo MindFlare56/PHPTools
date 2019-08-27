@@ -2,7 +2,7 @@
 
 class Tools
 {
-    function test() {
+    public function test() {
         echo "asd";
     }
 }
