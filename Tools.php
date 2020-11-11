@@ -2,9 +2,9 @@
 
 class Tools
 {
-    public static $DATE_TIME = "Y-m-d H:i:s";
-    public static $DATE = "Y-m-d";
-    public static $TIME = "H:i:s";
+    public static $DATE_TIME = 'Y-m-d H:i:s';
+    public static $DATE = 'Y-m-d';
+    public static $TIME = 'H:i:s';
     public static $secondMilliseconds = 1000;
     public static $minuteMilliseconds = 60000;
     public static $hourMilliseconds = 3.6e+6;
@@ -24,10 +24,11 @@ class Tools
         exit;
     }
 
-    public static function br($repeat) {
+    public static function br($repeat)
+    {
         if ($repeat > 0) {
-            for ($i = 0; $i < $repeat; ++$i) {
-                echo "<br/>";
+            for ($i = 0; $i < $repeat; $i++) {
+                echo '<br/>';
             }
         }
     }
@@ -40,44 +41,52 @@ class Tools
     public static function next_day()
     {
         $datetime = null;
+
         try {
             $datetime = new DateTime(Tools::now(Tools::$DATE));
         } catch (Exception $e) {
         }
         $datetime->modify('+1 day');
+
         return $datetime->format(Tools::$DATE);
     }
 
     public static function next_day_time()
     {
         $datetime = null;
+
         try {
             $datetime = new DateTime(Tools::now(Tools::$DATE));
         } catch (Exception $e) {
         }
         $datetime->modify('+1 day');
+
         return $datetime->getTimestamp();
     }
 
     public static function next_month_time()
     {
         $datetime = null;
+
         try {
             $datetime = new DateTime(Tools::now(Tools::$DATE));
         } catch (Exception $e) {
         }
         $datetime->modify('+1 month');
+
         return $datetime->getTimestamp();
     }
 
     public static function next_year_time()
     {
         $datetime = null;
+
         try {
             $datetime = new DateTime(Tools::now(Tools::$DATE));
         } catch (Exception $e) {
         }
         $datetime->modify('+1 year');
+
         return $datetime->getTimestamp();
     }
 
